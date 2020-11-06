@@ -1,0 +1,108 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, pink,pink, cyan);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#calculatordiv{
+    background-color: gray;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows: repeat(6,100px);
+    height: 600px;
+    width: 500px;
+    grid-template-areas: 
+    "disp disp disp disp"
+    "divide backspace clear add"
+    "one two three add"
+    "four five six sub"
+    "seven eight nine mult"
+    "zero zero zero equal"
+}
+#calculatordiv{
+    background-color: black;
+    border: 3px solid black;
+    box-shadow: gray 8px 8px 5px;
+}
+#calculatordisplay{
+    grid-area: disp;
+    background-color: #9a8dfd;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    justify-content: center;
+    border: 10px solid black;
+    border-radius: 5px;
+}
+button{
+    font-size:25px;
+    background-color: #3b3b3b;
+    color: white;
+}
+button:hover{
+    background-color: #555454;
+    font-size: 30px;
+}
+button:focus{
+    outline: none;
+}
+button:active{
+    transform: translateY(4px);
+}
+#btn1{ 
+    grid-area: one;
+}
+#btn2 {
+    grid-area: two;
+}
+#btn3{
+    grid-area: three;
+}
+#btn4{
+    grid-area: four;
+}
+#btn5{
+    grid-area: five;
+}
+#btn6{
+    grid-area: six;
+}
+#btn7{
+    grid-area: seven;
+}
+
+#btn8{
+    grid-area:eight;
+}
+
+#btn9{
+    grid-area: nine;
+}
+
+#btn0{
+    grid-area: zero;
+}
+
+#btnclear{
+    grid-area: clear;
+}
+#btnsubtract{
+    grid-area: sub;
+}
+#btnadd{
+    grid-area: add;
+}
+#btnmult{
+    grid-area: mult;
+}
+#btndivide{
+    grid-area: divide;
+}
+#btnequal{
+    grid-area: equal;
+}
+#btnbackspace{
+    grid-area: backspace;
+}
